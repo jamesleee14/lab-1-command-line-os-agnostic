@@ -10,15 +10,15 @@ Follow the instructions line-by-line.
 ==========
 1. Open a new terminal window.
 ----------
-
+Did CTRL+SHIFT+` and then clicked on bash(it's on the right side towards the bottom).
 ==========
 2. Create a directory called mtec1003.
 ----------
-
+Did $mkdir JamesMTEC1003
 ==========
 3. Change your directory so that you're in mtec1003.
 ----------
-
+Did $cd JamesMTEC1003.
 ==========
 4. Type:
 
@@ -30,7 +30,7 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/c/Users/James/JamesMTEC1003
 
 
 ==========
@@ -41,7 +41,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals/
 
 
 ==========
@@ -52,7 +52,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals/  food/
 
 
 ==========
@@ -63,7 +63,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals/  foo/  food/
 
 
 ==========
@@ -74,7 +74,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/c/Users/James/JamesMTEC1003/foo/bar/baz/qux
 
 
 ==========
@@ -85,7 +85,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/c/Users/James/JamesMTEC1003/foo/bar
 
 
 ==========
@@ -96,7 +96,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/c/Users/James/JamesMTEC1003/foo/bar/baz/qux
 
  
 ==========
@@ -107,7 +107,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/c/Users/James/JamesMTEC1003
 
 
 ==========
@@ -119,7 +119,13 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
+total 0
+drwxr-xr-x 1 James 197121 0 Sep 10 15:53 foo/
 
+This is what it gave me(all lines):
+total 0
+drwxr-xr-x 1 James 197121 0 Sep 10 15:53 foo/
+drwxr-xr-x 1 James 197121 0 Sep 10 15:53 food/
 
 
 ==========
@@ -130,7 +136,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/c/Users/James
 
 
 ==========
@@ -141,8 +147,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/James
 
-
+I used /mnt. I'm on windows. But when I did $cd /mnt, it says that there is no such file or directory.
 
 ==========
 15. Type:
@@ -152,7 +159,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+/c/Users/James
 
+Same thing as my answer above. It says there is no such file or directory when entering $cd /unknown_folder.
 
 
 ==========
@@ -163,13 +172,16 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/c/Users/James/JamesMTEC1003
 
 
 ==========
 16a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
+I believe that the command you use to make sure your in the right folder would be $pwd. Then, if you are in the right folder, there should be the folder name next to MINGW64.
 
+So my command to do it would be $pwd and the result would be:
+James@DESKTOP-07L4K8I MINGW64 ~/JamesMTEC1003
 
 
 ==========
@@ -192,7 +204,8 @@ lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+I used this command: $ mkdir -p lemon/strawberry/orange/pineapple
+Hopefully, this order is right. You wanted pineapple to be the most inner so I think I did it right.
 
 
 ==========
@@ -200,7 +213,7 @@ Use only one command to make all of these new directories.  Write what command y
 
 Write the command you used to create the directory below:
 ----------
-
+$mkdir aardvark
 
 
 ==========
@@ -208,7 +221,14 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
+Not sure what you mean by long but I will give two ways.
 
+$ls -l:
+total 0
+drwxr-xr-x 1 James 197121 0 Sep 10 16:08 aardvark/
+
+$ls -a:
+./  ../  aardvark/
 
 
 ==========
@@ -220,7 +240,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+$ mkdir -p foo/bar/baz
 
 
 ==========
@@ -228,7 +248,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+I had to do the commands 3 times. I did $cd foo, then $cd bar, then $cd baz.
 
 
 ==========
@@ -236,44 +256,45 @@ What command did you use?
 
 What command did you use?
 ----------
-
+I did $cd ../.. to get to foo.
 
 ==========
 23. What command is used to delete empty directories?
 ----------
-
+I'm not sure how to delete things inside the directory but to delete an empty directory, the command would be $rmdir <DIRECTORY>.
 
 
 ==========
 24. What command is used to print out your current working directory?
 ----------
-
+I believe the command would be $pwd. Once you do $pwd, it will print out the directories and also, above the command line, there is also the directory there and at the end of it shows what directory you are in.
 
 
 ==========
 25. What flag do I pass to ls to print out all files?
 ----------
-
+You would do $ls ~ to print out all files.
 
 
 ==========
 26. What's the shortcut for home directory?
 ----------
-
+The shortcut for home directory would be $cd ~ I believe or if home directory means the first file we created, then it would be $cd ~/JamesMTEC1003.
 
 
 ==========
 27. What's a pathname?
 ----------
-
+A pathname is the name on the path. So when doing $pwd<ENTER>, the result it gives you would be the pathname.
 
 
 ==========
 28. What's a directory?
 ----------
-
+A directory would be like the files. It's the filesystem you would use to organize files.
 
 
 ==========
 29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+On my computer, I did $cd first, then $ls and it gave me the list of all files. Then, I just did $cd Downloads. (Not sure if this is correct but that's the way how I understood to do this question).
